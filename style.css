@@ -1,9 +1,18 @@
 /* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
-html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
+html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
 
 body {
-    text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 /*
@@ -21,3 +30,115 @@ body {
 */
 
 /* ----- zde zacni psat vlastni css ----- */
+.zbozi {
+  border-radius: 10px;
+  box-shadow: 0 5px 10px gray;
+  display: flex;
+  margin: 200px;
+  width: 670px;
+}
+
+.vizual {
+  background: linear-gradient(#06d7c1, #50cc49);
+  border-radius: 10px 0 0 10px;
+  height: 440px;
+  padding: 30px;
+  position: relative;
+  width: 335px;
+}
+
+.detaily {
+  height: 440px;
+  padding: 30px;
+  position: relative;
+  width: 335px;
+}
+.nazev {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+.slogan {
+  color: whitesmoke;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 30px 0 0 0;
+}
+.bota {
+  position: absolute;
+  left: -80px;
+}
+
+.cenovka {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
+.cena {
+  color: whitesmoke;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.zaruka {
+  color: whitesmoke;
+  font-size: 12px;
+  font-weight: 400;
+}
+.produkt {
+  color: #959595;
+}
+
+.popis {
+  border-bottom: 1px solid #06d7c1;
+  margin-bottom: 30px;
+  margin-top: 25px;
+  padding-bottom: 30px;
+}
+.parametr {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.velikosti {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+
+.velikosti li {
+  border-radius: 50%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  width: 40px;
+}
+.velikosti li:active,
+.velikosti li:focus,
+.velikosti li:hover {
+  border: 1px solid #f15f42;
+  color: #f15f42;
+}
+.akce {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+}
+
+.tlacitko {
+  background-color: #f15f42;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px gray;
+  color: whitesmoke;
+  display: inline-block;
+  padding: 15px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.tlacitko:active,
+.tlacitko:focus,
+.tlacitko:hover {
+  background-color: #50cc49;
+}
